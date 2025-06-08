@@ -1,26 +1,45 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* === COULEURS DE BASE (gardez custom) === */
+  --color-background: light-dark(#f7f7f8, #0a192f);
+  --color-foreground: light-dark(
+    theme(colors.gray.600),
+    theme(colors.gray.200)
+  );
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* === COULEURS DE SURFACES === */
+  --color-surface: light-dark(theme(colors.gray.50), #0e213e);
+  --color-card: light-dark(theme(colors.white), theme(colors.gray.800));
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  /* === COULEURS DE TEXTE === */
+  --color-title: light-dark(theme(colors.gray.900), theme(colors.white));
+  --color-subtitle: light-dark(theme(colors.gray.700), theme(colors.gray.200));
+  --color-muted: light-dark(theme(colors.gray.500), theme(colors.gray.400));
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* === COULEURS FONCTIONNELLES === */
+  --color-accent: light-dark(#ff285c, #ff96a5);
+  --color-accent-hover: light-dark(
+    theme(colors.rose.600),
+    theme(colors.rose.300)
+  );
+
+  /* === ARRIÈRE-PLANS SUBTILS === */
+  --color-soft: light-dark(
+    theme(colors.slate.500/16%),
+    theme(colors.slate.400/16%)
+  );
+  --color-soft-bg: light-dark(theme(colors.gray.100), theme(colors.gray.800));
+
+  /* === BORDURES === */
+  --color-border: light-dark(
+    theme(colors.gray.400/50%),
+    theme(colors.gray.600)
+  );
+  --color-divider: light-dark(theme(colors.gray.200), theme(colors.gray.700));
+  --color-gutter: light-dark(theme(colors.gray.200), theme(colors.black));
+
+  /* === ANIMATIONS === */
+  --ease-smooth: cubic-bezier(0.65, 0, 0.005, 1);
+  --duration-smooth: 0.735s;
 }
