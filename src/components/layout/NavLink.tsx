@@ -23,6 +23,7 @@ export default function NavLink({ href, children, className }: NavLinkProps) {
         isActive && "nav-link-active",
         className
       )}
+      aria-current={isActive ? "page" : undefined}
     >
       {children}
     </Link>

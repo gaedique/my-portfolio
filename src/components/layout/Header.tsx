@@ -1,5 +1,5 @@
 import LocaleSwitch from "../ui/LocaleSwitch";
-import { Logo } from "../ui/Logo";
+import { Logo } from "./Logo";
 import ThemeSwitch from "../ui/ThemeSwitch";
 import Navigation from "./Navigation";
 

@@ -1,14 +1,14 @@
-interface LogoIconProps {
+type LogoIconProps = {
   width?: number;
   height?: number;
   className?: string;
-}
+};
 
-export default function LogoIcon({
+export const LogoIcon = ({
   width = 40,
   height = 40,
   className,
-}: LogoIconProps) {
+}: LogoIconProps) => {
   const aspectRatio = 196 / 162;
   const calculatedHeight = Math.round(width * aspectRatio);
   const finalHeight = height || calculatedHeight;
@@ -46,4 +46,4 @@ export default function LogoIcon({
       </defs>
     </svg>
   );
-}
+};

@@ -2,7 +2,7 @@
 
 @theme {
   /* === COULEURS DE BASE (gardez custom) === */
-  --color-background: light-dark(#f7f7f8, #0a192f);
+  --color-background: light-dark(theme(colors.white), #0a192f);
   --color-foreground: light-dark(
     theme(colors.gray.600),
     theme(colors.gray.200)
@@ -10,7 +10,8 @@
 
   /* === COULEURS DE SURFACES === */
   --color-surface: light-dark(theme(colors.gray.50), #0e213e);
-  --color-card: light-dark(theme(colors.white), theme(colors.gray.800));
+  --color-card: light-dark(#8892b0, theme(colors.white));
+  --color-role: light-dark(#8892b0, #8892b0);
 
   /* === COULEURS DE TEXTE === */
   --color-title: light-dark(theme(colors.gray.900), theme(colors.white));

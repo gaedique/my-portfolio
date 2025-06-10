@@ -1,9 +1,11 @@
-import LogoIcon from "@/components/icons/LogoIcon";
+import { LogoIcon } from "@/components/icons/LogoIcon";
+import Link from "next/link";
 
 export const Logo = () => {
   return (
     // Exterior Div - Container Badge
-    <div
+    <Link
+      href="/"
       className="
       antialiased flex items-center relative h-8 w-8 bg-black/80
       backdrop-blur-[48px] rounded-full select-none cursor-pointer scale-100
@@ -14,21 +16,18 @@ export const Logo = () => {
       data-next-badge="true"
       data-error="false"
     >
-      {/* Intermediate div */}
-      <div>
-        {/* Inner button */}
-        <button
-          className="
+      {/* Inner button */}
+      <div
+        className="
           w-7 h-7 flex items-center justify-center rounded-full transition-all duration-300 
           hover:bg-white/[0.13] focus:outline-none focus:ring-2 focus:ring-white/20
           border-none bg-transparent ml-0.5
           "
-          data-next-mark="true"
-          aria-label="Logo"
-        >
-          <LogoIcon width={16} className="transition-colors duration-300" />
-        </button>
+        data-next-mark="true"
+        aria-label="Home"
+      >
+        <LogoIcon width={16} className="transition-colors duration-300" />
       </div>
-    </div>
+    </Link>
   );
 };
