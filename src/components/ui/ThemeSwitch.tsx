@@ -16,7 +16,11 @@ export default function ThemeSwitch() {
   // Pendant l'hydratation, afficher un placeholder neutre
   if (!mounted) {
     return (
-      <button className="relative rounded-xl block w-10 h-6 flex-shrink-0 border border-border">
+      <button
+        className="relative rounded-xl block w-10 h-6 flex-shrink-0 border border-border"
+        aria-label="Theme switch loading"
+        disabled
+      >
         <span className="absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white shadow-md flex items-center justify-center">
           <Sun size={12} className="text-yellow-500" />
         </span>
@@ -28,9 +32,11 @@ export default function ThemeSwitch() {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="relative rounded-xl block w-10 h-6 flex-shrink-0 
+      className="relative rounded-xl w-10 h-6 flex-shrink-0 
       border border-border transition-all duration-300 ease-in-out 
-      bg-soft hover:border-accent"
+      bg-soft cursor-pointer hover:border-accent
+      focus:outline-none focus:ring-2 focus:ring-accent/20"
+      aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
     >
       <span
         className={`

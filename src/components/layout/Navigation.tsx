@@ -1,4 +1,4 @@
-import NavLink from "@/components/ui/NavLink";
+import NavLink from "@/components/layout/NavLink";
 import { navigationItems } from "@/data/navigation";
 
 export default function Navigation() {

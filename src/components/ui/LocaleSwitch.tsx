@@ -13,8 +13,12 @@ export default function LocaleSwitch() {
   return (
     <button
       onClick={toggleLocale}
-      className="relative rounded-xl block w-6 h-6 flex-shrink-0 
-      overflow-hidden border border-border transition-all duration-300 ease-in-out hover:scale-110 hover:border-accent"
+      className="relative rounded-xl w-6 h-6 flex-shrink-0 cursor-pointer
+      overflow-hidden border border-border 
+      transition-all duration-300 ease-in-out 
+      hover:scale-110 hover:border-accent 
+      focus:outline-none focus:ring-2 focus:ring-accent/20"
+      aria-label={`Switch to ${locale === "en" ? "French" : "English"}`}
     >
       {locale === "en" ? (
         <GB className="w-full h-full object-cover" />
