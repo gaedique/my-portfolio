@@ -40,7 +40,15 @@
   --color-divider: light-dark(theme(colors.gray.200), theme(colors.gray.700));
   --color-gutter: light-dark(theme(colors.gray.200), theme(colors.black));
 
+  /* === TAILLES DE POLICE === */
+  --font-size-small: 0.875rem;
+
   /* === ANIMATIONS === */
   --ease-smooth: cubic-bezier(0.65, 0, 0.005, 1);
   --duration-smooth: 0.735s;
+
+  /* === ESPACEMENT === */
+  --spacing-section: theme(spacing.24);
+  --spacing-container: theme(spacing.8);
+  --spacing-component: theme(spacing.6);
 }
