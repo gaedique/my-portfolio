@@ -13,7 +13,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="flex flex-col justify-center gap-8 py-24 border-b border-border">
+    <section className="flex flex-col justify-center gap-12 py-section border-b border-border">
       <h1 className="leading-relaxed">
         <span className="block text-accent">{greeting}</span>
         <strong className="block text-title font-bold text-4xl">{name}</strong>
@@ -49,7 +49,6 @@ export const Hero = () => {
             <p>
               {description.map((segment, index) => {
                 if (typeof segment === "string") {
-                  // ← Cette ligne manquait !
                   return segment;
                 }
                 return (
