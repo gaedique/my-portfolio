@@ -9,14 +9,14 @@
   );
 
   /* === COULEURS DE SURFACES === */
-  --color-surface: light-dark(theme(colors.gray.50), #0e213e);
+  --color-surface: light-dark(theme(colors.gray.100), #0e213e);
   --color-card: light-dark(#8892b0, theme(colors.white));
   --color-role: light-dark(#8892b0, #8892b0);
 
   /* === COULEURS DE TEXTE === */
   --color-title: light-dark(theme(colors.gray.900), theme(colors.white));
   --color-subtitle: light-dark(theme(colors.gray.700), theme(colors.gray.200));
-  --color-muted: light-dark(theme(colors.gray.500), theme(colors.gray.400));
+  --color-muted: light-dark(theme(colors.gray.400), theme(colors.gray.400));
 
   /* === COULEURS FONCTIONNELLES === */
   --color-accent: light-dark(#ff285c, #ff96a5);
@@ -39,6 +39,7 @@
   );
   --color-divider: light-dark(theme(colors.gray.200), theme(colors.gray.700));
   --color-gutter: light-dark(theme(colors.gray.200), theme(colors.black));
+  --color-table: light-dark(white, dark);
 
   /* === TAILLES DE POLICE === */
   --font-size-small: 0.875rem;

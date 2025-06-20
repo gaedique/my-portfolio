@@ -5,6 +5,7 @@ import { FileText, Github, Globe } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import CTA from "../ui/Button";
+import { TechBadges } from "../ui/TechBadges";
 
 export const FeaturedProjects = () => {
   const { image, video, category, title, description, technologies, cta } =
@@ -72,24 +73,15 @@ export const FeaturedProjects = () => {
           <p className="text-sm text-muted">{category}</p>
           <h3 className="text-2xl text-title pb-6">{title}</h3>
           <p>{description}</p>
-          <div className="flex flex-wrap gap-2 py-6">
-            {technologies.map((technology, index) => (
-              <span
-                key={index}
-                className="bg-role text-background px-2 py-1 rounded-md text-xs"
-              >
-                {technology}
-              </span>
-            ))}
-          </div>
-          <div>
-            <CTA
-              buttons={cta}
-              iconMap={iconMap}
-              gap="sm"
-              className="text-sm pt-2"
-            />
-          </div>
+          {/* Tech Bages */}
+          <TechBadges technologies={technologies} />
+          {/* Call to Action */}
+          <CTA
+            buttons={cta}
+            iconMap={iconMap}
+            gap="sm"
+            className="text-sm pt-2"
+          />
         </div>
       </div>
     </section>
