@@ -141,7 +141,7 @@ export const labProjects = [
     id: 5,
     title: "Portfolio Nina Carducci",
     name: "Portfolio Nina Carducci",
-    category: "Development",
+    category: "SEO & Performance",
     client: "Study Project",
     year: 2024,
     technologies: ["SEO", "Performance", "Accessibility"],

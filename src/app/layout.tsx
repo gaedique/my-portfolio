@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className="bg-background text-foreground antialiased transition-[background-color,color] 
+        className="bg-background text-foreground font-body antialiased transition-[background-color,color] 
   duration-[--duration-smooth] ease-[--ease-smooth]"
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
