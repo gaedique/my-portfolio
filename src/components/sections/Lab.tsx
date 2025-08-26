@@ -5,7 +5,7 @@ import { useState } from "react";
 import { ProjectDetails } from "../ui/ProjectDetails";
 
 /**
- * Lab section displaying featured projects in an expandable table format
+ * Lab section displaying projects in an expandable table format
  * Users can click on project rows to view detailed information
  */
 
@@ -20,7 +20,7 @@ export const Lab = () => {
 
   return (
     <section className="flex flex-col py-section border-b border-border gap-12">
-      <h2 className="text-3xl text-title font-bold">Featured Projects</h2>
+      <h2 className="text-3xl text-title font-bold">Lab</h2>
       <div className="w-full">
         {/* Table header with column labels */}
         <div className="grid grid-cols-[1.4fr_1fr_1fr_auto] py-2 text-muted uppercase">

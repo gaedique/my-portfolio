@@ -1,3 +1,6 @@
+@import url("https://api.fontshare.com/css?f[]=satoshi@400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://api.fontshare.com/css?f[]=austin@400,500,600,700&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -44,6 +47,14 @@
   /* === TAILLES DE POLICE === */
   --font-size-small: 0.875rem;
 
+  /* === FONT === */
+  /* --font-family: {
+    sans: "Satoshi", ui-sans-serif, system-ui, sans-serif;
+  } */
+  --font-body: "Satoshi", ui-sans-serif, system-ui, sans-serif;
+  /* --font-heading: "Space Grotesk", ui-sans-serif, system-ui, sans-serif; */
+  --font-heading: "Austin", ui-serif, Georgia, serif;
+
   /* === ANIMATIONS === */
   --ease-smooth: cubic-bezier(0.65, 0, 0.005, 1);
   --duration-smooth: 0.735s;
@@ -52,4 +63,21 @@
   --spacing-section: theme(spacing.24);
   --spacing-container: theme(spacing.8);
   --spacing-component: theme(spacing.6);
+}
+
+@layer components {
+  .gradient-mesh-layer {
+    @apply absolute inset-0 w-full h-full bg-no-repeat transition-all;
+    background-image: url("/images/background/mesh-gradient_light.png");
+    background-size: 104px 104px;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform;
+    background-position: var(--bg-position, center);
+    transform: var(--bg-transform, none);
+  }
+
+  .dark .gradient-mesh-layer {
+    background-image: url("/images/background/mesh-gradient_dark.png");
+  }
 }
