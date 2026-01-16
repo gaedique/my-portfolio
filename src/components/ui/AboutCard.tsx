@@ -190,7 +190,7 @@ export const AboutCard = (props: AboutCardProps) => {
   return (
     <div
       ref={cardRef}
-      className="flex items-end bg-surface p-6 gap-12 rounded-md about-card-container"
+      className="flex items-end bg-surface p-6 gap-12 rounded-md"
     >
       {/* Text content area */}
       <div className="flex flex-col flex-1 gap-4">
