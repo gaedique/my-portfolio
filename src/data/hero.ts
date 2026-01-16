@@ -1,3 +1,5 @@
+import { contactData } from "./contact";
+
 export const heroData = {
   greeting: "Hi there ! I'm",
   name: "Gaëdique",
@@ -19,12 +21,12 @@ export const heroData = {
   cta: {
     primary: {
       text: "Get In Touch",
-      href: "mailto:gaedique.dev@gmail.com",
+      href: `mailTo:${contactData.email}`,
       icon: "mail",
     },
     secondary: {
       text: "CV",
-      href: "/cv-gaedique.pdf",
+      href: contactData.resume,
       icon: "download",
     },
   },
