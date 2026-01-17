@@ -1,3 +1,4 @@
+"use client";
 import { heroData } from "@/data/hero";
 import { Download, Mail } from "lucide-react";
 import Image from "next/image";

@@ -42,7 +42,7 @@ export const Lab = () => {
             >
               {/* Sliding background on hover */}
               <div
-                className="absolute inset-0 bg-card transform translate-y-full 
+                className="absolute inset-0 bg-accent transform translate-y-full 
                   group-hover:translate-y-0 transition-transform duration-300 ease-in-out -z-10"
               ></div>
 
